@@ -174,7 +174,7 @@
 <li>打开 <code>_config.yml</code> 文件。</li>
 <li>在文件的底部，添加或修改 <code>deploy</code> 部分，使其指向您刚刚在 GitHub 上创建的仓库。它应该看起来像这样：</li>
 </ol>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/&lt;your-username&gt;/&lt;your-username&gt;.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">main</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/&lt;your-username&gt;/&lt;your-username&gt;.github.io.git</span><br><span class="line">  branch: main</span><br></pre></td></tr></table></figure>
 
 <p>请将 <code>&lt;your-username&gt;</code> 替换为您的 GitHub 用户名。</p>
 <h3 id="3-安装-Hexo-deployer-git"><a href="#3-安装-Hexo-deployer-git" class="headerlink" title="3. 安装 Hexo-deployer-git"></a>3. 安装 Hexo-deployer-git</h3><p>如果您还没有安装 <code>hexo-deployer-git</code>，您需要安装它来帮助您将博客部署到 GitHub。在终端中，运行以下命令：</p>
