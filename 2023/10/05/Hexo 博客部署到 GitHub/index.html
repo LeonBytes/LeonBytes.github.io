@@ -169,7 +169,14 @@
 <li>访问 <a target="_blank" rel="noopener" href="https://github.com/">GitHub</a> 并登录您的帐户。</li>
 <li>创建一个新的仓库。仓库名称应该是 <code>&lt;your-username&gt;.github.io</code>，其中 <code>&lt;your-username&gt;</code> 是您的 GitHub 用户名。</li>
 </ol>
-<h3 id="2-配置-Hexo"><a href="#2-配置-Hexo" class="headerlink" title="2. 配置 Hexo"></a>2. 配置 Hexo</h3><ol>
+<h3 id="2-下载Nodejs和Git"><a href="#2-下载Nodejs和Git" class="headerlink" title="2. 下载Nodejs和Git"></a>2. 下载Nodejs和Git</h3><p>1.成功配置好Nodejs后，可以利用Git Bash进行测试<br>分别执行一下命令，查询版本号</p>
+<pre><code class="yml">$ node -v
+$ npm -v
+</code></pre>
+<h3 id="3-安装和配置-Hexo"><a href="#3-安装和配置-Hexo" class="headerlink" title="3. 安装和配置 Hexo"></a>3. 安装和配置 Hexo</h3><p>1.在git bash执行下面的命令安装hexo（例如在F盘新建了一个blog文件夹，就在blog文件夹下打开git bash）</p>
+<pre><code class="yml">cnpm install hexo-cli -g
+</code></pre>
+<ol start="2">
 <li>打开您的 Hexo 博客目录。</li>
 <li>打开 <code>_config.yml</code> 文件。</li>
 <li>在文件的底部，添加或修改 <code>deploy</code> 部分，使其指向您刚刚在 GitHub 上创建的仓库。它应该看起来像这样：</li>
@@ -179,20 +186,23 @@
   repo: https://github.com/&lt;your-username&gt;/&lt;your-username&gt;.github.io.git
   branch: main
 </code></pre>
-<p>请将 <code>&lt;your-username&gt;</code> 替换为您的 GitHub 用户名。</p>
-<h3 id="3-安装-Hexo-deployer-git"><a href="#3-安装-Hexo-deployer-git" class="headerlink" title="3. 安装 Hexo-deployer-git"></a>3. 安装 Hexo-deployer-git</h3><p>如果您还没有安装 <code>hexo-deployer-git</code>，您需要安装它来帮助您将博客部署到 GitHub。在终端中，运行以下命令：</p>
+<p>然后请将 <code>&lt;your-username&gt;</code> 替换为您的 GitHub 用户名。</p>
+<p>5.初始化博客（运行这条命令需要确定Git Bash运行在Blog文件夹下）</p>
+<pre><code class="yml">hexo init
+</code></pre>
+<h3 id="4-安装-Hexo-deployer-git"><a href="#4-安装-Hexo-deployer-git" class="headerlink" title="4. 安装 Hexo-deployer-git"></a>4. 安装 Hexo-deployer-git</h3><p>如果您还没有安装 <code>hexo-deployer-git</code>，您需要安装它来帮助您将博客部署到 GitHub。在终端中，运行以下命令：</p>
 <pre><code class="sh">npm install hexo-deployer-git --save
 </code></pre>
 <p>或者如果您使用 <code>cnpm</code>：</p>
 <pre><code class="sh">cnpm install hexo-deployer-git --save
 </code></pre>
-<h3 id="4-部署博客"><a href="#4-部署博客" class="headerlink" title="4. 部署博客"></a>4. 部署博客</h3><p>现在，您可以使用以下命令将您的博客部署到 GitHub：</p>
+<h3 id="5-部署博客"><a href="#5-部署博客" class="headerlink" title="5. 部署博客"></a>5. 部署博客</h3><p>现在，您可以使用以下命令将您的博客部署到 GitHub：</p>
 <pre><code class="sh">hexo clean
 hexo generate
 hexo deploy
 </code></pre>
 <p>这将构建您的博客并将其推送到您在 <code>_config.yml</code> 文件中指定的 GitHub 仓库。</p>
-<h3 id="5-访问您的博客"><a href="#5-访问您的博客" class="headerlink" title="5. 访问您的博客"></a>5. 访问您的博客</h3><p>一旦部署完成，您可以通过访问 <code>https://&lt;your-username&gt;.github.io</code> 来查看您的博客。</p>
+<h3 id="6-访问您的博客"><a href="#6-访问您的博客" class="headerlink" title="6. 访问您的博客"></a>6. 访问您的博客</h3><p>一旦部署完成，您可以通过访问 <code>https://&lt;your-username&gt;.github.io</code> 来查看您的博客。</p>
 <p>请记得替换 <code>&lt;your-username&gt;</code> 为您的 GitHub 用户名。</p>
 
     </div>
